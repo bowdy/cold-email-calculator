@@ -157,7 +157,7 @@ export default function Home() {
                 className="w-full rounded border-0 bg-transparent py-1 text-lg font-semibold text-gray-900 focus:outline-none"
               />
             </div>
-            <span className="text-xs text-gray-400">Namecheap avg</span>
+            <a href="https://www.namecheap.com/domains/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-blue-500 hover:underline">Namecheap</a>
           </div>
           <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
             <label className="mb-1 block text-xs font-medium text-gray-500">
@@ -175,7 +175,7 @@ export default function Home() {
                 className="w-full rounded border-0 bg-transparent py-1 text-lg font-semibold text-gray-900 focus:outline-none"
               />
             </div>
-            <span className="text-xs text-gray-400">Premium Inboxes</span>
+            <a href="https://premiuminboxes.chargebee.com/pages/v4/9IYawIU9NCnt3j5curcuNu3iWgMcuNrAtAD/cart" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-blue-500 hover:underline">Premium Inboxes</a>
           </div>
         </div>
 
@@ -212,7 +212,7 @@ export default function Home() {
                 <div className="text-sm font-medium text-gray-700">
                   Domains ({calculations.domainsNeeded} &times; {formatCurrency(domainCostPerYear)}/yr)
                 </div>
-                <div className="text-xs text-gray-400">Namecheap</div>
+                <a href="https://www.namecheap.com/domains/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-blue-500 hover:underline">Namecheap</a>
               </div>
               <div className="text-sm font-semibold text-gray-900">
                 {formatCurrency(calculations.domainsMonthlyCost)}/mo
@@ -223,7 +223,7 @@ export default function Home() {
                 <div className="text-sm font-medium text-gray-700">
                   Inboxes ({calculations.inboxesNeeded} &times; {formatCurrency(inboxCostPerMonth)}/mo)
                 </div>
-                <div className="text-xs text-gray-400">Premium Inboxes</div>
+                <a href="https://premiuminboxes.chargebee.com/pages/v4/9IYawIU9NCnt3j5curcuNu3iWgMcuNrAtAD/cart" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-blue-500 hover:underline">Premium Inboxes</a>
               </div>
               <div className="text-sm font-semibold text-gray-900">
                 {formatCurrency(calculations.inboxesMonthlyCost)}/mo
@@ -235,7 +235,7 @@ export default function Home() {
                   Smartlead {calculations.smartleadPlan.name} Plan
                 </div>
                 <div className="text-xs text-gray-400">
-                  Up to {formatNumber(calculations.smartleadPlan.emailsPerMonth)} emails/mo
+                  <a href="https://www.smartlead.ai/pricing" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline">Smartlead</a> &middot; Up to {formatNumber(calculations.smartleadPlan.emailsPerMonth)} emails/mo
                   {billingCycle === "annual" && (
                     <span className="ml-1 text-green-600">
                       (save {formatCurrency(calculations.smartleadPlan.monthly - calculations.smartleadPlan.annual)}/mo)
@@ -252,7 +252,7 @@ export default function Home() {
                 <div className="text-sm font-medium text-gray-700">
                   Smartlead Lead Finder
                 </div>
-                <div className="text-xs text-gray-400">SmartProspect add-on</div>
+                <a href="https://www.smartlead.ai/pricing" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-blue-500 hover:underline">SmartProspect add-on</a>
               </div>
               <div className="text-sm font-semibold text-gray-900">
                 {formatCurrency(LEAD_FINDER_COST)}/mo
